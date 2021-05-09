@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WHClientTab.vue renders tab with correct title and active false state 1`] = `<div class="wh-client__tab nav-link">Inventory</div>`;
+
+exports[`WHClientTab.vue renders tab with correct title and active true state 1`] = `
+<div class="wh-client__tab nav-link active">
+  Inventory
+</div>
+`;

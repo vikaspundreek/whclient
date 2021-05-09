@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WHClientProductList.vue Render product list as per provided products data with articles with name 1`] = `
+<div class="wh-client__product-list">
+  <div class="wh-client__product pt-2">
+    <h6>Dining Chair</h6>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Article Name</th>
+          <th scope="col" class="text-right">Required</th>
+          <th scope="col" class="text-right">Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="wh-client__article pt-2">
+          <td>Leg</td>
+          <td class="text-right">4</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">12</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Seat</td>
+          <td class="text-right">1</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">2</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Screw</td>
+          <td class="text-right">8</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">17</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+  <div class="wh-client__product pt-2">
+    <h6>Dining Table</h6>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Article Name</th>
+          <th scope="col" class="text-right">Required</th>
+          <th scope="col" class="text-right">Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="wh-client__article pt-2">
+          <td>Leg</td>
+          <td class="text-right">4</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">12</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Table Top</td>
+          <td class="text-right">1</td>
+          <td class="text-right wh-client__stock"><span class="article-stock article-stock--unavailable">N/A</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Screw</td>
+          <td class="text-right">8</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">17</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+</div>
+`;
+
+exports[`WHClientProductList.vue Render product list with one of them having not full article data 1`] = `
+<div class="wh-client__product-list">
+  <div class="wh-client__product pt-2">
+    <h6>Dining Chair</h6>
+    <p><strong> Articles </strong>: articles detail not available at this
+      moment.
+    </p>
+    <hr>
+  </div>
+  <div class="wh-client__product pt-2">
+    <h6>Dining Table</h6>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Article Name</th>
+          <th scope="col" class="text-right">Required</th>
+          <th scope="col" class="text-right">Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="wh-client__article pt-2">
+          <td>Leg</td>
+          <td class="text-right">4</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">12</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Table Top</td>
+          <td class="text-right">1</td>
+          <td class="text-right wh-client__stock"><span class="article-stock article-stock--unavailable">N/A</span></td>
+        </tr>
+        <tr class="wh-client__article pt-2">
+          <td>Screw</td>
+          <td class="text-right">8</td>
+          <td class="text-right wh-client__stock"><span class="article-stock">17</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+</div>
+`;

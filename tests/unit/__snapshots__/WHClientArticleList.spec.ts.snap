@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WHClientArticleList.vue Render article list as per provided article data 1`] = `
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Article Name</th>
+      <th scope="col" class="text-right">Required</th>
+      <th scope="col" class="text-right">Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="wh-client__article pt-2">
+      <td>Leg</td>
+      <td class="text-right">4</td>
+      <td class="text-right wh-client__stock"><span class="article-stock">12</span></td>
+    </tr>
+    <tr class="wh-client__article pt-2">
+      <td>Seat</td>
+      <td class="text-right">1</td>
+      <td class="text-right wh-client__stock"><span class="article-stock">2</span></td>
+    </tr>
+    <tr class="wh-client__article pt-2">
+      <td>Screw</td>
+      <td class="text-right">8</td>
+      <td class="text-right wh-client__stock"><span class="article-stock">17</span></td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`WHClientArticleList.vue Render article list with one article is availability less than requirement 1`] = `
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Article Name</th>
+      <th scope="col" class="text-right">Required</th>
+      <th scope="col" class="text-right">Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="wh-client__article pt-2">
+      <td>Leg</td>
+      <td class="text-right">4</td>
+      <td class="text-right wh-client__stock"><span class="article-stock article-stock--unavailable">N/A</span></td>
+    </tr>
+    <tr class="wh-client__article pt-2">
+      <td>Seat</td>
+      <td class="text-right">1</td>
+      <td class="text-right wh-client__stock"><span class="article-stock">2</span></td>
+    </tr>
+    <tr class="wh-client__article pt-2">
+      <td>Screw</td>
+      <td class="text-right">8</td>
+      <td class="text-right wh-client__stock"><span class="article-stock">17</span></td>
+    </tr>
+  </tbody>
+</table>
+`;
