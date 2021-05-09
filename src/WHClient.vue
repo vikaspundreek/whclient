@@ -48,7 +48,7 @@ export default class App extends Vue {
   private isLoading = false;
   private currentTab: string = this.config.tabs[0].id;
 
-  mounted():void {
+  mounted(): void {
     this.fetchData(true);
   }
 

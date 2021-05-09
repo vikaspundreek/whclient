@@ -17,7 +17,7 @@ export interface IProduct {
 export interface IArticle {
   id: string;
   name?: string;
-  amountInStock?: number;
+  amountInStock: number;
   amountRequired: number;
 }
 

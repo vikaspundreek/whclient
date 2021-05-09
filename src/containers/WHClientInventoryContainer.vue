@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { IProduct, IStore } from "../interfaces/WHClientInteraces";
+import { IStore } from "../interfaces/WHClientInteraces";
 import WHClientProductList from "../components/WHClientProductList.vue";
 import { BButton } from "bootstrap-vue";
 
@@ -25,8 +25,8 @@ import { BButton } from "bootstrap-vue";
 export default class WHClientInventoryContainer extends Vue {
   @Prop() store!: IStore;
 
-  get showProductList(): IProduct[] {
-    return this.store.products.length && this.store.articles.length;
+  get showProductList(): boolean {
+    return this.store.products.length > 0 && this.store.articles.length > 0;
   }
 }
 </script>

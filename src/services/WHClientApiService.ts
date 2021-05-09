@@ -63,7 +63,7 @@ class WHClientApiService {
     }
   };
 
-  public updateProductName(sales: ISale[], products: IProduct[]) {
+  public updateProductName(sales: ISale[] | null, products: IProduct[]) {
     return sales
       ? sales.map((sale) => {
           sale.productName = products.find(
@@ -76,7 +76,6 @@ class WHClientApiService {
 
   public updateProductStock(products: IProduct[], articles: IArticle[] = []) {
     return products.map((product: IProduct) => {
-      const aritcleStockArr = [];
       product.articles = product.articles.map((productArticle: IArticle) => {
         return {
           ...productArticle,

@@ -93,17 +93,17 @@ export default class WHClientRegisterSale extends Vue {
   }
 
   get maxProductToOrder(): number {
-    return this.selectedProduct ? this.selectedProduct.stock : 0;
+    return this.selectedProduct?.stock ? this.selectedProduct.stock : 0;
   }
 
-  get selectedProduct(): IProduct {
+  get selectedProduct(): IProduct | undefined {
     return this.products.find(
       (product) => product.id === this.selectedProductId
     );
   }
 
   get orderAmountValid(): boolean {
-    return this.maxProductToOrder && this.amountSold <= this.maxProductToOrder;
+    return this.amountSold <= this.maxProductToOrder;
   }
 
   get openModal(): boolean {
